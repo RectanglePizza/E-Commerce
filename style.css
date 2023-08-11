@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;900&family=Rubik:wght@300;400;600;900&display=swap');
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans";
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+/* heading main conmtainer class */
+.container {
+    background-color: rgb(245, 245, 208);
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    height: 60px;
+    align-items: center;
+}
+.right-portion{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.right-portion .navigation ul {
+    list-style: none;
+}
+.right-portion .navigation ul li {
+    display: inline;
+    margin-right:0.5em;
+}
+.kart{
+    height: 60px;
+    display: flex;
+    width: 60px;
+    position: relative;
+}
+.kart img {
+    transform: scale(0.5);
+    position: relative;
+}
+.kart p{
+    position: absolute;
+    left: 25px;
+    bottom: 12px;
+    z-index: 1;
+    background-color: rgb(198, 240, 226);
+    padding-left: 0.5px;
+    padding-right: 0.5px;
+    border-radius: 10px;
+}
+.kart-block {
+    background-color: aliceblue;
+    height: 100vh;
+    width: 40%;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    overflow-y: auto;
+}
+
+.hero-screen{
+    background-image: url(./pexels-nataliya-vaitkevich-6214476.jpg);
+    height: 90vh ;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(243, 236, 236, 0.4);
+    background-blend-mode: color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-screen .form .search{
+    opacity: 1;
+    color: rgb(24, 11, 11);
+    font-weight:900;
+    font-size: 2.5rem;
+}
+.search-bar{
+    border-radius: 10px;
+    padding: 1rem;
+}
+.products-heading h1 {
+    text-align: center;
+}
+.iphone{
+    /*background-size: cover;*/
+    height: 10rem;
+    width: 14rem;
+    background-size: cover;
+}
+.product-properties{
+    display: flex;
+    justify-content: space-between;
+}
+.product-properties button {
+    height: 2rem;
+    margin-top: 10px;
+}
+.products{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.left-arrow{
+    background-image: url(./icons8-left-arrow-100.png);
+    height: 2.5rem;
+    width: 3rem;
+    background-color: aliceblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+.right-arrow{
+    background-image: url(./icons8-left-arrow-100.png);
+    height: 2.5rem;
+    width: 3rem;
+    background-color: aliceblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+    transform: rotate(180deg);
+}
